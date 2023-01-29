@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music for life</title>
+    <style>
+        body {
+            background-image: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+            )
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(63, 24, 202);
+            text-shadow: 5px;
+            font-size: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            border: 2px solid rgb(164, 20, 207);
+            border-radius: 10px;
+            font-size: 24px;
+
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .move {
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .raining {
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #1a64d6;
+            background: rgb(164, 20, 207);
+            color: #fff;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 24px;
+            border-radius: 30px;
+            transition: all 200ms ease;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+            cursor: pointer;
+
+        }
+
+        .link {
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        button:hover {
+            background: rgb(164, 20, 207);
+            color: #83df1b;
+            border: 1px solid #20d61a;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .page {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h1>
+            Do you love music?
+        </h1>
+        <h2>
+            Music is good for the soul
+        </h2>
+        <img src="https://www.musicgrotto.com/wp-content/uploads/2022/10/woman-listening-to-music-soul-songs-text-music-background.jpg"
+            alt="music" width="100%" />
+        <p>
+            Music has been helping people stay happy and express themseleves for years. Music is generally defined as
+            the
+            art of arranging sound to create some combination of form, harmony, melody,
+            rhythm or
+            otherwise expressive content. Music often plays a key role in social activities, religious rituals, rite of
+            passage ceremonies, celebrations, and
+            cultural activities. The music industry includes songwriters, performers, sound engineers, producers, tour
+            organizers,
+            distributors of instruments, accessories, and sheet music. Compositions, performances, and recordings are
+            assessed and
+            evaluated by music critics, music journalists, and music scholars, as well as amateurs.
+        </p>
+        <p class="link"> <a href="https://en.wikipedia.org/wiki/Music" target="_blank"> Learn more about on wiki </a>
+        </p>
+
+        <br />
+        <img src="https://media.giphy.com/media/13Iu9mjLpXF0ek/giphy.gif" alt="dancing" width="650px" class="move" />
+        <p><a href="https://giphy.com/gifs/dancing-party-despicable-me-13Iu9mjLpXF0ek"></a></p>
+        <button>
+            Check out my playlist
+        </button>
+        <p class="footer">
+            This page was built by
+            Jasmine
+            </a>
+        </p>
+
+
+        <img src="https://thefortyfive.com/wp-content/uploads/Rain-On-Me-1068x590.jpg" alt="dancing " width="650px"
+            class="raining" />
+
+
+    </div>
+    <script>
+        function addnow() {
+            let name = prompt("what is your name?");
+            let question = prompt("Would you like a new playlist?");
+
+            if (question === "yes") {
+                alert("Thank you " + name + "! Here is the link! https://open.spotify.com/playlist/4zZjPQBQHbNc9j7Z0s4hbT?si=16290ebaf3a84a48")
+            } else {
+                alert("Thank you " + name + "! Too bad😜 Here is the link! https://open.spotify.com/playlist/4zZjPQBQHbNc9j7Z0s4hbT?si=16290ebaf3a84a48 ")
+            }
+        }
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", addnow);
+    </script>
+</body>
+
+</html>
